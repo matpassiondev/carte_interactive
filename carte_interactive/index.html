@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte interractive</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.0/mapbox-gl.js'></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+
+
+<!--css mapbox-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.0/mapbox-gl.css' rel='stylesheet' />
+<!--css geocoder-->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css" type="text/css">
+<!--css direction-->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+    <div id='map'></div>
+
+    <button id="bouton-tourisme">Recherche tourisme</button>
+   <!-- <form>
+       
+        <label for="hotel">Hotel</label>
+        <input type="radio" name="etablissement" id="hotel">
+        
+        <label for="restaurant">restaurant</label>
+        <input type="radio" name="etablissement" id="restaurant">
+
+        <label for="chambre_hote">Chambre d'hote</label>
+        <input type="radio" name="etablissement" id="chambre_hote">
+
+    </form> -->
+
+
+
+
+    <form>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nomUser">
+
+        <label for="age">age</label>
+        <input type="number" name="age" id="age">
+        
+        <label for="dark">foncé</label>
+        <input type="radio" name="theme" id="dark">
+        <label for="light">clair</label>
+        <input type="radio" name="theme" id="light">
+
+        <input type="submit" value="envoyer" id="btnPref">
+
+
+
+    </form>
+<!--
+    <input type="button" value="retour au theme clair" id='lightTheme'>
+    <input type="button" value="effacer le cache" id='clearStockage'>
+-->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
