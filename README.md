@@ -1,4 +1,4 @@
-# carte_interractive
+# carte_interactive
 
 Cette carte interactive de Côte-d'Or a été réalisée avec l'API de MapBox.
 
